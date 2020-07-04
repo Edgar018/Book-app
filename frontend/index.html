@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Books</title>
+
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <a href="/" class="nav__logo">Book App</a>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="card card-width">
+            <div class="container">
+                <form class="form" id="bookForm">
+                   <div class="form__group">
+                    <input type="text" id="title" class="form__input" placeholder="Title" autofocus> 
+                   </div>
+                   <div class="form__group">
+                    <input type="text" id="author" class="form__input" placeholder="Author"> 
+                   </div>
+                   <div class="form__group">
+                    <input type="text" id="isbn" class="form__input" placeholder="ISBN"> 
+                   </div>
+                   <div class="form__group">
+                    <label class="form__input-file-label">
+                        <input id="image" type="file" class="form__input-file"/>
+                        Choose Image
+                    </label>
+                   </div>
+                   <button class="form__button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="books" id="listBooks">
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
